@@ -1,0 +1,188 @@
+<!Doctype html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title> My portfolio</title>
+	<!-- start of the styling-->
+	<style>
+	*
+	{
+		box-sizing: border-box;
+	}
+	body
+	{
+		background-color:grey;
+		font-family:Arial Black;
+		padding: 20px;
+	}
+	.main
+	{
+		max-width:1500px;
+		margin:auto;
+	}
+	h1
+	{
+		font-size:45px;
+		text-align: center;
+		margin-top:-55px;
+		color:black;
+		text-shadow:2px 2px 5px red;
+
+	}
+	h3
+	{
+		font-size:30px;
+		text-align: center;
+		text-shadow:2px 2px 5px #6c39a3; 
+		margin-top: 5px;
+	}
+	h2
+	{
+		font-size:40px;
+		text-align: center;
+		text-shadow: 3px 3px 6px #0fd96d;
+		margin-top: 5px;
+
+	}
+	.row
+	{
+		margin:8px-16px;
+	}
+	.col
+	{
+		float:left;
+		width:50%;
+	}
+	
+	.content
+	{
+		background-color:black;
+		padding:10px; 
+	}
+	@media screen and (max-width:900px)
+	{
+		.col
+		{
+			width:100px;
+		}
+	}
+.sidenav
+{
+	background-color:#423c3c;
+	background-repeat: no-repeat;
+	position:fixed;
+	display: none;
+	z-index:1;
+	overflow-x: hidden;
+	top:0;
+	left: 0;
+	height: 100%;
+	width:150px;
+	padding-top:60px;
+}
+ 
+span
+{
+	color:black;
+}
+.sidenav a
+{
+display:block;
+text-decoration: none;
+font-size:18px;
+padding:20px 18px 8px 22px;
+color: white;
+}
+.sidenav a:hover
+{
+	background-color:#784647;
+	display:box;
+}
+	
+	</style>
+	<!--end of the styling-->
+	</head>
+<body>
+	<!-- hameburger menu-->
+	  <div id ="hamburger" class="sidenav">
+	 	      <a href="javascript:void(0)"class="closebtn" onclick="closenav()"> &times;</a>
+	 	      <a href="home.html"> Home</a>
+		      <a href="mystory.html">My Story</a>
+		      <a href="education.html"> Education</a>
+		      <a href="protfolio.html"> Portfolio</a>
+		      <a href="contact.html"> Contact Us</a>
+	 </div>
+	  <!-- use any element to open  the sidenav-->
+       <span style="font-size: 30px; cursor: pointer" onclick = "opennav()">&#9776;</span>
+	 <!-- script-->
+	 <script>
+	 	function opennav()
+	 	{
+            document.getElementById("hamburger").style.display="block";
+	 	}
+	 	function closenav()
+	 	{
+	 		document.getElementById("hamburger").style.display="none";
+	 	}
+	 </script> 
+	 <!-- creating the body part-->
+	 <div class="main">
+	 	<!-- main part-->
+	 	  <h1> See the beauty of color from your &#10083;</h1>
+		 	   <div class="content">
+		 	   	<!--main image-->
+		 	   	<img src="images/gliter.jpeg" alt=" color" style="width: 100%">
+		 	   </div>
+		 	  <h2> Colour of our life</h2>
+	 </div>
+	 <!-- table grid of the portfolio-->
+	  <div class="row">
+		  	<div class="col">
+		  	<div class="content">
+	  			<img src="images/god.jpg" alt="color" style="width:100% ">
+	  	    </div>
+	  	         <h3>About life</h3>
+	  	    </div>
+	  	    <div class="col">
+	  	    <div class="content">
+	  		     <img src="images/crayon.jpg" alt=" color" style="width:100%  ">
+	  	    </div>
+	  	    <h3>Crayon life</h3>
+	  	    </div>
+	  	</div>
+	  	<!--2nd div-->
+	  	<div class="row">
+	  	    <div class="col">
+	  	    <div class="content">
+	  		     <img src="images/living.jpg" alt=" color" style="width:100% ">
+	  	    </div>
+	  	    <h3>City life</h3>
+	  	    </div>
+	  	</div>
+		  	<div class="col">
+		  	<div class="content">
+	  			<img src="images/funny.jpg" alt=" color" style="width:100% ">
+	  	    </div>
+	  	         <h3>Black</h3>
+	  	    </div>
+	  	  </div>
+	  	    <!-- 3rd div-->
+	  	    <div class="row">
+	  	    <div class="col">
+	  	    <div class="content">
+	  		     <img src="images/dream.jpg" alt=" color" style="width:100%">
+	  	    </div>
+	  	    <h3> dream </h3>
+	  	    </div>
+	  	    <div class="col">
+	  	    <div class="content">
+	  		     <img src="images/love.jpg" alt=" color" style="width: 100%">
+	  	    </div>
+	  	    <h3>love life</h3>
+	  	    </div>
+	  	</div>
+
+	</body>
+</html>

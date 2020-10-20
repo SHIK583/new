@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="contact.css">
+     <title> Contact Us </title>
+</head>
+<body>
+	 <!-- create a side nav-->
+  	  <div id="hamburger" class="sidenav">
+  	  	      <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times; </a>
+		      <a href="home.html"> Home</a>
+		      <a href="mystory.html">My Story</a>
+		      <a href="education.html"> Education</a>
+		      <a href="protfolio.html"> Portfolio</a>
+		      <a href="contact.html"> Contact Us</a>
+		      
+      </div>
+
+      <!-- use any element to open  the sidenav-->
+       <span style="font-size: 30px; cursor: pointer" onclick = "opennav()">&#9776;</span>
+		       <!-- javascript style-->
+			       <script>
+			       	    function opennav()
+			       	    {
+			       		     document.getElementById("hamburger").style.display ="block";
+			       		}
+
+			       		function closenav()
+			       		{
+			       			document.getElementById("hamburger").style.display="none";
+			       		}
+			       </script>
+		<!-- contact page-->
+		<div class="container">
+		     <h1> Contact Us</h1>
+		     <p> we help you from our &#10083;</p>
+		     <div class="row">
+		     <div class="col">
+		     	   <img src="images/unique.jpg">
+		     </div>
+		     <div class="col">
+		     	 <form action="/action_page.php">
+		     	 	<label for="fname">First name</label>
+		     	 	<input type="text" placeholder="First Name...">
+		     	 	<label for="lname">Last name</label>
+		     	 	<input type="text" placeholder="Last Name...">
+		     	 	<label for="country">Country</label>
+		     	 	<input type="text" placeholder="Country...">
+		     	 	<label for="message">Message</label>
+		     	 	<textarea id="mess" name="Message" placeholder="Write something.." style="height:170px"></textarea>
+		     	 	<button id="submit" name="submit">Submit</button>
+
+		     	 </form>
+		     </div>
+		     </div>
+		</div>
+</body>
+</html>
